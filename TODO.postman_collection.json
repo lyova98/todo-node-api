@@ -65,7 +65,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "mutation {\r\n    createTodo(name: \"test todo\", status: TODO) {\r\n        message,\r\n        status\r\n    }\r\n}",
+						"query": "mutation {\r\n    createTodo(name: \"test todo\", status: TODO) {\r\n        message,\r\n        status,\r\n        todo{\r\n            id,\r\n            name,\r\n            createdAt,\r\n            updatedAt,\r\n        }\r\n    }\r\n}",
 						"variables": ""
 					}
 				},
@@ -91,7 +91,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "mutation {\r\n    updateTodo(id: 2, name: \"test todo5\", status: TODO) {\r\n        message,\r\n        status\r\n    }\r\n}",
+						"query": "mutation {\r\n    updateTodo(id: 47, name: \"test todo6\", status: TODO) {\r\n        message,\r\n        status,\r\n        todo {\r\n            id,\r\n            name,\r\n            createdAt,\r\n            updatedAt,\r\n        }\r\n    }\r\n}",
 						"variables": ""
 					}
 				},
